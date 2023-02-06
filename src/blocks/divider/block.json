@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/divider",
+  "version": "0.1.5",
+  "title": "Divider",
+  "category": "block-category-basic",
+  "keywords": ["divider", "spacer"],
+  "description": "",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false
+  },
+  "attributes": {
+    "dividerColor": {
+      "type": "string",
+      "default": "#000"
+    },
+    "dividerColorClass": {
+      "type": "string",
+      "default": "one"
+    },
+    "paddingTop": {
+      "type": "string",
+      "default": "1"
+    },
+    "paddingBottom": {
+      "type": "string",
+      "default": "1"
+    },
+    "anchor": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "parent": ["epea-theme/section", "epea-theme/sectionhero", "epea-theme/sectionherosub", "epea-theme/sectionswipe", "epea-theme/tabsslideritem", "epea-theme/column", "epea-theme/accordionitem", "epea-theme/visualimage"],
+  "textdomain": "epea-theme",
+  "editorScript": "file:./index.js"
+}

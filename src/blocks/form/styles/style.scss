@@ -1,0 +1,185 @@
+.form.form--contact {
+	.form-label {
+		font-family: 'Barlow', Arial, sans-serif;
+		font-size: 20px;
+		line-height: 25px;
+		color: #575756;
+		display: block;
+	}
+	input,
+	textarea {
+		&:not(input[type="checkbox"]):not(input[type="submit"]) {
+			font-family: 'Barlow', Arial, sans-serif;
+			font-size: 18px;
+			line-height: 28px;
+			color: #575756;
+			display: block;
+			margin: 0px;
+			border-width: 0px 0px 1px 0px;
+			border-color: #575756;
+			outline: unset;
+			border-radius: 0px;
+			width: 100%;
+			padding: 2px 0px 0px;
+			background-color: transparent;
+		}
+		&:focus,
+		:focus-within,
+		&:active {
+			outline: unset;
+			box-shadow: unset;
+		}
+	}
+	textarea {
+		height: 127px;
+		background-color: transparent;
+	}
+	.acceptance {
+		display: block;
+		position: relative;
+		margin-top: 33px;
+		input {
+			position: absolute;
+			z-index: 100;
+			opacity: 0;
+			width: 100%;
+			height: 100%;
+			cursor: pointer;
+		}
+		.form-label {
+			cursor: pointer;
+			display: block;
+			padding-left: 60px;
+			position: relative;
+			&::before {
+				content: "";
+				border: 1px solid #575756;
+				display: block;
+				height: 35px;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 35px;
+			}
+		}
+		input[type="checkbox"] {
+			&:checked + {
+				& .form-label {
+					&:after {
+						content: "";
+						transform: rotate(45deg);
+						height: 20px;
+						width: 9px;
+						border-bottom: 5px solid #49725B;
+						border-right: 5px solid #49725B;
+						position: absolute;
+						top: 2px;
+						left: 11px;
+					}
+				}
+			}
+		}
+	}
+    .submit--button {
+        padding: 0;
+        width: 230px;
+        margin: 20px auto 20px auto;
+
+        input[type="submit"] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border: none;
+            background: transparent;
+            outline: none;
+            padding: 0 30px 0 67px;
+            color: #ffffff;
+            font-weight: 500;
+            font-family: "Barlow", Arial, sans-serif;
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+    }
+	.error-msg,
+	.invalid-msg {
+		font-family: 'Barlow', Arial, sans-serif;
+		font-size: 16px;
+		line-height: 20px;
+		color: #ff0000;
+		display: none;
+		opacity: 0;
+		transition: 0.5s all ease-in-out;
+		&.show {
+			opacity: 1;
+			display: block;
+		}
+	}
+	.response {
+		display: none;
+		opacity: 0;
+		transition: 0.5s all ease-in-out;
+		&.show {
+			opacity: 1;
+			display: block;
+		}
+		.response-message {
+			font-family: 'Barlow', Arial, sans-serif;
+			font-size: 16px;
+			line-height: 24px;
+			color: #575756;
+			padding: 0.2em 1em;
+			border: 2px solid;
+			&.error {
+				border-color: #ff0000;
+			}
+			&.success {
+				border-color: #46b450;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.form.form--contact {
+		.acceptance {
+			.form-label {
+				font-size: 16px;
+				line-height: 20px;
+				padding-left: 50px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.form.form--contact {
+		> .row {
+			--gap: 40px;
+			.row {
+				&:not(:last-child) {
+					--gap: 40px;
+				}
+			}
+		}
+		.acceptance {
+			margin-top: 50px;
+			.form-label {
+				font-size: 18px;
+				line-height: 24px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.form.form--contact {
+		.submit--button {    
+            input[type="submit"] {
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+	}
+}

@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/visualheadline",
+  "version": "0.1.5",
+  "title": "Headline Visual",
+	"category": "block-category-advanced",
+  "description": "",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false
+  },
+	"attributes": {
+    "mainHeadline": {
+      "type": "string",
+      "source": "html",
+      "selector": ".headline--style-two",
+      "default": ""
+    },
+    "mainLevel": {
+      "type": "string",
+      "default": "1"
+    },
+    "subHeadline": {
+      "type": "string",
+      "source": "html",
+      "selector": ".headline--style-five",
+      "default": ""
+    },
+    "subLevel": {
+      "type": "string",
+      "default": "span"
+    },
+    "paragraph": {
+      "type": "string",
+      "source": "html",
+      "selector": ".text--style-two",
+      "default": ""
+    },
+    "buttonLink": {
+      "type": "object"
+    },
+    "buttonText": {
+      "type": "string",
+      "source": "html",
+      "selector": ".button__helper"
+    },
+		"xlwidth": {
+			"type": "number",
+			"default": 5
+		},
+		"lgwidth": {
+			"type": "number",
+			"default": 9
+		},
+		"mdwidth": {
+			"type": "number",
+			"default": 8
+		},
+		"number": {
+			"type": "number",
+			"default": 0
+		},
+		"hideDescription": {
+			"type": "boolean",
+			"default": true
+		},
+		"hideButton": {
+			"type": "boolean",
+			"default": true
+		},
+		"isFullWidth": {
+			"type": "boolean",
+			"default": true
+		},
+		"anchor": {
+			"type": "string",
+			"default": ""
+		},
+		"extraClass": {
+			"type": "string",
+			"default": ""
+		}
+	},
+  "parent": ["epea-theme/section", "epea-theme/sectionhero", "epea-theme/sectionherosub", "epea-theme/sectionswipe", "epea-theme/tabsslideritem"],
+  "keywords": ["headline", "visual"],
+  "textdomain": "epea-theme",
+  "editorScript": "file:./index.js"
+}

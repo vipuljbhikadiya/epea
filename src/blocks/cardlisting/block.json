@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/cardlisting",
+  "version": "0.1.0",
+  "title": "Card Listing",
+	"category": "block-category-listing",
+  "keywords": ["card", "list", "card listing"],
+  "description": "",
+  "supports": {
+    "html": true,
+    "anchor": false,
+    "customClassName": false
+  },
+  "attributes": {
+    "anchor": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "epea-theme",
+  "parent": ["epea-theme/section", "epea-theme/sectionhero", "epea-theme/sectionherosub", "epea-theme/sectionswipe", "epea-theme/tabsslideritem"],
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

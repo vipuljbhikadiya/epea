@@ -1,0 +1,46 @@
+.section .wp-block[data-type="epea-theme/accordion"] > .accordion {
+
+  > .block-list-appender {
+    position: relative;
+    display: none;
+
+    > button {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      padding: 12px;
+      box-shadow: inset 0 0 0 1px #007cba;
+      color: #007cba;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.wp-block[data-type="epea-theme/accordion"].is-selected > .accordion,
+.wp-block[data-type="epea-theme/accordion"].has-child-selected > .accordion  {
+  > .block-list-appender {
+    display: block;
+  }  
+}
+
+.wp-block[data-type="epea-theme/accordionitem"] > .accordion-item__content > .accordion-item__content-helper {
+  > .block-list-appender {
+    button {
+      box-shadow: inset 0 0 0 1px #007cba;
+      color: #007cba;
+
+      &.block-list-appender__toggle {
+        color: #ffffff;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.wp-block[data-type="epea-theme/accordionitem"].is-selected > .accordion-item__content,
+.wp-block[data-type="epea-theme/accordionitem"].has-child-selected > .accordion-item__content {
+  max-height: none; 
+}

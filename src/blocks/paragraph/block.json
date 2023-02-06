@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/paragraph",
+  "version": "0.1.5",
+  "title": "Paragraph",
+  "category": "block-category-basic",
+  "keywords": ["paragraph", "detail"],
+  "description": "",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false
+  },
+  "attributes": {
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": "p,span",
+      "default": ""
+    },
+    "tag": {
+      "type": "string",
+      "default": "p"
+    },
+    "placeholder": {
+      "type": "string",
+      "default": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#575756"
+    },
+    "textColorClass": {
+      "type": "string",
+      "default": "three"
+    },
+    "textStyle": {
+      "type": "string",
+      "default": "two"
+    },
+    "anchor": {
+      "type": "string",
+      "default": ""
+    },
+    "extraClass": {
+      "type": "string",
+      "default": ""
+    },
+    "AlignXs": {
+      "type": "string",
+      "default": "left"
+    },
+    "AlignSm": {
+      "type": "string",
+      "default": ""
+    },
+    "AlignMd": {
+      "type": "string",
+      "default": ""
+    },
+    "AlignLg": {
+      "type": "string",
+      "default": ""
+    },
+    "AlignXl": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "epea-theme",
+  "parent": ["epea-theme/column", "epea-theme/visualimage", "epea-theme/accordionitem"],
+  "editorScript": "file:./index.js"
+}

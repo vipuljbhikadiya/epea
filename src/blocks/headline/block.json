@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/headline",
+  "version": "0.1.5",
+  "title": "Headline",
+  "category": "block-category-basic",
+  "keywords": ["title", "subtitle"],
+  "description": "",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false
+  },
+  "attributes": {
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": "h1,h2,h3,h4,h5,h6,span",
+      "default": ""
+    },
+    "level": {
+      "type": "string",
+      "default": "1"
+    },
+    "placeholder": {
+      "type": "string",
+      "default": "Lore ipsum dolor"
+    },
+    "headStyle": {
+      "type": "string",
+      "default": "one"
+    },
+    "headColor": {
+      "type": "string",
+      "default": "#575756"
+    },
+    "headColorClass": {
+      "type": "string",
+      "default": "three"
+    },
+    "anchor": {
+      "type": "string",
+      "default": ""
+    },
+    "AlignXs": {
+      "type": "string",
+      "default": "left"
+    },
+    "AlignSm": {
+      "type": "string",
+      "default": ""
+    },
+    "AlignMd": {
+      "type": "string",
+      "default": ""
+    },
+    "AlignLg": {
+      "type": "string",
+      "default": ""
+    },
+    "AlignXl": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "epea-theme",
+  "parent": ["epea-theme/column", "epea-theme/visualimage", "epea-theme/accordionitem"],
+  "editorScript": "file:./index.js"
+}

@@ -1,0 +1,135 @@
+// -----------------------------------------------------------------------------
+// CSS DEFINITION::START -------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+// CSS XS DEFINITION::SECTION --------------------------------------------------
+// -----------------------------------------------------------------------------
+
+.section {
+	display: block;
+	position: relative;
+}
+
+.section__content {
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.section__background {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+.section__background picture img {
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	width: 100%;
+}
+
+// DEFINE XS SECTION BACKGROUND COLOR ------------------------------------------
+
+@each $color in $color-set {
+	$color-name: nth($color, 1);
+	$color-value: nth($color, 2);
+
+	.section--bg-#{$color-name} {
+		background-color: $color-value;
+	}
+}
+
+// DEFINE XS SECTION PADDING ---------------------------------------------------
+
+@for $i from 0 through $section-padding-count {
+	$section-padding: nth($section-padding-xs, ($i + 2));
+
+	.section--pd-top-#{$i} {
+		padding-top: $section-padding;
+	}
+	.section--pd-bottom-#{$i} {
+		padding-bottom: $section-padding;
+	}
+}
+
+// DEFINE XS SECTION HIDE ------------------------------------------------------
+
+.section.section--xs-hide {
+	display: none;
+}
+
+// -----------------------------------------------------------------------------
+// CSS DEFINITION::BREAKPOINTS -------------------------------------------------
+// -----------------------------------------------------------------------------
+
+@each $breakpoint in $breakpoint-set {
+	// CSS BREAKPOINTS DEFINITION::SECTION -----------------------------------------
+	// -----------------------------------------------------------------------------
+
+	$name: nth($breakpoint, 1);
+	$size: nth($breakpoint, 2);
+
+    @media only screen and (min-width: $size) {
+		.section {
+			display: block;
+		}
+
+		// DEFINE BREAKPOINTS SECTION PADDING ------------------------------------------
+
+		@each $padding in $section-padding-set {
+			$padding-name: nth($padding, 1);
+
+			@if ($padding-name == $name) {
+				@for $i from 0 through $section-padding-count {
+					$section-padding: nth($padding, ($i + 2));
+
+					.section--pd-top-#{$i} {
+						padding-top: $section-padding;
+					}
+					.section--pd-bottom-#{$i} {
+						padding-bottom: $section-padding;
+					}
+				}
+			}
+		}
+
+		// DEFINE BREAKPOINTS SECTION HIDE ---------------------------------------------
+
+        @if ($name == 'sm') {
+            .section.section--md-hide {
+                display: none;
+            }
+            .section:not(.section--md-hide) {
+                display: block;
+            }
+        }
+        @if ($name == 'md') {
+            .section.section--md-hide {
+                display: none;
+            }
+            .section:not(.section--md-hide) {
+                display: block;
+            }
+        }
+        @if ($name == 'lg') {
+            .section.section--lg-hide {
+                display: none;
+            }
+            .section:not(.section--lg-hide) {
+                display: block;
+            }
+        }
+        @if ($name == 'xl') {
+            .section.section--lg-hide {
+                display: none;
+            }
+            .section:not(.section--lg-hide) {
+                display: block;
+            }
+        }
+	}
+}

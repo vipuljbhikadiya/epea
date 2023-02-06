@@ -1,0 +1,95 @@
+.image--button {
+	&-right {	
+		.image__button {
+			right: 0px;
+		}
+	}
+
+	&-left {
+		.image__button {
+			left: 0px;
+		}
+	}
+
+	.image__button {
+		position: absolute;
+		display: flex;
+		bottom: 0;
+    z-index: 2;
+
+		&-text {
+			font-family: $font-body;
+			font-size: 16px;
+			line-height: 18px;
+			font-weight: 600;
+			text-decoration: underline;
+			color: #ffffff;
+			text-transform: uppercase;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			width: 130px;
+			height: 130px;
+			padding: 10px;
+			border-radius: 100%;
+			background-color: #49725B;
+			z-index: 1;
+			justify-content: center;
+		}
+	}
+}
+@media screen and (min-width: 481px) {
+	.image--button {
+		margin-bottom: 30px;
+
+	.image__button {
+			&-text {
+				font-size: 18px;
+				line-height: 20px;
+				width: 150px;
+				height: 150px;
+				padding: 10px;
+			}
+		}
+	}
+}
+@media screen and (min-width: 769px) {
+	.image--button {
+    .image__button {
+			&-text {
+				font-size: 20px;
+				line-height: 24px;
+				width: 200px;
+				height: 200px;
+				padding: 20px;
+			}
+		}
+	}
+}
+@media screen and (min-width: 1025px) {
+	.image--button {
+		margin-bottom: 40px;
+
+    .image__button {
+			&-text {
+				width: 180px;
+				height: 180px;
+			}
+		}
+	}
+}
+@media screen and (min-width: 1401px) {
+	.image--button {
+		margin-bottom: 60px;
+
+    .image__button {
+			&-text {
+				font-size: 24px;
+				line-height: 30px;
+				width: 220px;
+				height: 220px;
+				padding: 20px;
+			}
+		}
+	}
+}

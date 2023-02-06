@@ -1,0 +1,37 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "epea-theme/form",
+	"version": "0.1.5",
+	"title": "Form",
+	"category": "block-category-basic",
+	"description": "",
+	"supports": {
+		"html": false,
+		"anchor": false,
+		"customClassName": false
+	},
+	"attributes": {
+		"clientid": {
+			"type": "string",
+			"default": ""
+		},
+		"recipients": {
+			"type": "string",
+			"default": "info@domain.com"
+		},
+		"mailSubject": {
+			"type": "string",
+			"default": "Website | Contact Form"
+		},
+		"anchor": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"keywords": ["form", "general", "epea-theme"],
+	"parent": ["epea-theme/section", "epea-theme/sectionhero", "epea-theme/sectionherosub", "epea-theme/sectionswipe", "epea-theme/tabsslideritem"],
+	"textdomain": "epea-theme",
+	"editorScript": "file:./index.js",
+  	"editorStyle": "file:./index.css"
+}

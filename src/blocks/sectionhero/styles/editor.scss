@@ -1,0 +1,12 @@
+.wp-block[data-type="epea-theme/sectionhero"] > .section--hero-main {
+    .section__content > .section__content > .block-editor-inner-blocks > .block-editor-block-list__layout > .block-list-appender  {
+        display: none;
+    }  
+}
+
+.wp-block[data-type="epea-theme/sectionhero"].is-selected > .section--hero-main {
+    .section__content > .section__content > .block-editor-inner-blocks > .block-editor-block-list__layout > .block-list-appender  {
+        display: block;
+        position: relative;
+    }  
+}

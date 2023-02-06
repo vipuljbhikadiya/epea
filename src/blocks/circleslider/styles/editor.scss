@@ -1,0 +1,15 @@
+.slider-circle .wp-block[data-type="epea-theme/circleslideritem"] {
+
+	&:not([data-hidden]) {
+		display: block;
+	}
+
+	&[data-hidden = "true"] {
+		display: none;
+	}
+
+	.slider-circle__slide {
+		visibility: visible;
+		opacity: 1;
+	}
+}

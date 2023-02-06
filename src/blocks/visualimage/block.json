@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/visualimage",
+  "version": "0.1.0",
+	"title": "Visual Image",
+	"category": "block-category-special",
+	"keywords": ["visual", "image"],
+  "description": "",
+  "supports": {
+    "html": true,
+    "anchor": false,
+    "customClassName": false
+  },
+  "attributes": {
+    "anchor": {
+      "type": "string",
+      "default": ""
+    },
+    "style": {
+      "type": "string",
+      "default": "left"
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "webpImageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "xsimageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "webpxsImageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "mdimageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "webpmdImageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "imageId": {
+      "type": "number",
+      "default": ""
+    },
+    "imageAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "imageDefaultAlt": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "epea-theme",
+  "parent": ["epea-theme/section", "epea-theme/sectionhero", "epea-theme/sectionherosub", "epea-theme/sectionswipe", "epea-theme/tabsslideritem"],
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

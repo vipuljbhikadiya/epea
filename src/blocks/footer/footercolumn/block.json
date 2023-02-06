@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/footercolumn",
+  "version": "0.1.5",
+  "title": "Column",
+	"category": "block-category-not-use",
+  "description": "",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false
+  },
+	"attributes": {
+		"extraClass": {
+			"type": "string"
+		}
+	},
+  "parent": ["epea-theme/footersection", "epea-theme/footerlogo"],
+  "keywords": ["Footer"],
+  "textdomain": "epea-theme",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

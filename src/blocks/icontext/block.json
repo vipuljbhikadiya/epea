@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "epea-theme/icontext",
+	"version": "0.1.0",
+	"title": "Icon + Text",
+	"category": "block-category-basic",
+	"keywords": ["icon", "text", "epea-theme"],
+	"description": "",
+	"supports": {
+		"html": false,
+		"anchor": false,
+		"customClassName": false
+	},
+	"attributes": {
+		"anchor": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "epea-theme",
+	"parent": ["epea-theme/column", "epea-theme/visualimage", "epea-theme/accordionitem"],
+	"editorScript": "file:./index.js"
+}

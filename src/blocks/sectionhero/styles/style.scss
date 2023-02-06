@@ -1,0 +1,178 @@
+.section.section--hero-main {
+	overflow: hidden;
+
+	.section__header {
+
+		.section__header-content {
+			padding-top: 120px;
+		}
+		
+		.section__header-visual {
+			padding-bottom: 10%;
+			position: relative;
+			
+			&::before {
+				content: "";
+				background-color: #E3E3E3;
+				border-radius: 100%;
+				position: absolute;
+				top: 0;
+				right: -35%;
+				padding: 50%;
+				margin: auto;
+				z-index: 0;
+			}
+			
+			picture {
+				z-index: 1;
+			}
+		}
+
+		.section__swipe {
+			display: inline-block;
+			z-index: -1;
+			width: 90%;
+			position: absolute;
+			top: 130vh;
+			left: 0px;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 481px) {
+	.section.section--hero-main {
+
+		.section__header {
+
+			.section__header-visual {
+				padding-bottom: 2%;
+
+				&::before {
+					right: -30%;
+					padding: 45%;
+				}
+				
+				picture {
+					padding-left: 5%;
+				}
+			}
+
+			.section__swipe {
+				top: 150vh;
+			}
+		}
+	}
+}
+@media screen and (min-width: 769px) {
+	.section.section--hero-main {
+
+		.section__header {
+
+			.section__header-content {
+				padding-top: 160px;
+			}
+
+			.section__header-visual {
+				padding-bottom: 40px;
+
+				&::before {
+					right: -20%;
+					padding: 43%;
+					top: 3%;
+				}
+
+				picture {
+					padding-left: 0;
+				}
+			}
+
+			.section__swipe {
+				width: 60%;
+				top: 130vh;
+			}
+		}
+	}
+}
+@media screen and (min-width: 1025px) {
+	.section.section--hero-main {
+
+		.section__header {
+
+			.section__header-content {
+				padding: 140px 0 120px;
+
+				.headline {
+					font-size: 40px;
+					line-height: 45px;
+				}
+				.text {
+					font-size: 24px;
+					line-height: 30px;
+				}
+			}
+
+			.section__header-visual {
+				padding-bottom: 2%;
+
+				&::before {
+					right: -50%;
+					padding: 60%;
+					top: -20%;
+				}
+
+				picture {
+					margin-top: 5%;
+				}
+			}
+
+			.section__swipe {
+				width: 50%;
+				top: 45vh;
+			}
+		}
+	}
+}
+@media screen and (min-width: 1401px) {
+	.section.section--hero-main {
+
+		.section__header {
+
+			.section__header-content {
+				padding: 180px 0 120px;
+
+				.headline {
+					font-size: 60px;
+					line-height: 70px;
+				}
+
+				.text {
+					font-size: 27px;
+					line-height: 32px;
+				}
+			}
+
+			.section__header-visual {
+				padding-bottom: 0;
+
+				&::before {
+					right: -38%;
+					padding: 58%;
+					top: -28%;
+				}
+
+				picture {
+					margin-top: 0;
+				}
+			}
+
+			.section__swipe {
+				width: 40%;
+				top: 60vh;
+			}
+		}
+	}
+}

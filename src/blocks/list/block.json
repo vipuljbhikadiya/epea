@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/list",
+  "version": "0.1.5",
+  "title": "List",
+  "category": "block-category-basic",
+  "keywords": ["list", "item", "list item"],
+  "description": "",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false
+  },
+  "attributes": {
+    "listStyle": {
+      "type": "string",
+      "default": "two"
+    },
+    "listColor": {
+      "type": "string",
+      "default": "#575756"
+    },
+    "listColorClass": {
+      "type": "string",
+      "default": "three"
+    },
+    "listType": {
+      "type": "string",
+      "default": "unordered"
+    },
+    "anchor": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "epea-theme",
+  "parent": ["epea-theme/column", "epea-theme/visualimage", "epea-theme/accordionitem"],
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

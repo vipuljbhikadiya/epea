@@ -1,0 +1,80 @@
+[data-type="epea-theme/mapslider"] {
+
+	.slider-map {
+
+		.splide--map {
+			visibility: visible;
+		}
+	}
+}
+
+[data-type="epea-theme/mapslideritem"] {
+
+	.splide__slide {
+	  opacity: 1 !important;
+	}
+  
+	&[data-hidden] {
+	  display: none;
+	}
+}
+
+@media screen and (min-width: 481px) {
+	[data-type="epea-theme/mapslider"] {
+
+		.slider-map {
+
+			.slider-map {
+
+				&__visual-helper {
+					transform: scale(1);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 769px) {
+	[data-type="epea-theme/mapslider"] {
+
+		.slider-map {
+
+			.slider-map {
+
+				&__visual-helper {
+					transform: scale(1);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	[data-type="epea-theme/mapslider"] {
+
+		.slider-map {
+
+			.slider-map {
+
+				&__visual-helper {
+					transform: scale(1);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1401px) {
+	[data-type="epea-theme/mapslider"] {
+
+		.slider-map {
+
+			.slider-map {
+
+				&__visual-helper {
+					transform: scale(1);
+				}
+			}
+		}
+	}
+}

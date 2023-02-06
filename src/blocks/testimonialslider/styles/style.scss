@@ -1,0 +1,260 @@
+.slider-testimonial {
+  max-width: 100%;
+	min-width: 300px;
+	margin: 0 0 20px 0;
+	overflow: hidden;
+
+  .splide--testimonial {
+    margin: 0px 5%;
+
+    .splide {
+
+      &__track {
+				margin-bottom: 20px;
+				overflow: visible;
+      }
+
+      &__slide {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        transition: 0.5s opacity ease-in-out;
+        padding: 10px;
+
+        &:not(.is-active) {
+          opacity: 0.4;
+        }
+
+        .image {
+          width:80%;
+          margin: 0 auto;
+          
+          picture {
+            width: 100%;
+            
+            img {
+              object-position: top;
+            }
+          }
+        }
+      }
+
+      &__icon {
+        position: absolute;
+        border-radius: 100%;
+        background-color: #8ABD7D;
+        width: 70px;
+        height: 70px;
+        left: 11px;
+        bottom: -3px;
+        
+        svg {
+          display: block;
+          height: 100%;
+          margin: auto;
+          width: 30px;
+        }
+      }
+
+      &__content {
+        margin: 35px 0px 0px;
+			  width:100%;
+			
+			  .headline {
+				  margin-bottom: 0;
+			  }
+      }
+
+
+
+
+
+
+      &__arrows {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &__arrow--prev {
+        background: #8ABD7D;
+        margin-right: -18px;
+        width: 60px;
+        height: 60px;
+
+        svg {
+          transform: rotate(180deg);
+          width: 17px;
+          height: 17px;
+          margin-right: 8px;
+
+          line {
+            stroke: #ffffff;
+          }
+        }
+      }
+      
+      &__arrow--next {
+        background: #49725B;
+        width: 77px;
+        height: 77px;
+
+        svg {
+          fill: #ffffff;
+          width: 24px;
+          height: 24px;
+          margin-right: -4px;
+
+          line {
+            stroke: #ffffff;
+          }
+        }
+      }
+
+      &__arrow--prev,
+      &__arrow--next {
+        border: 0;
+        border-radius: 50%;
+        padding: 0;
+        line-height: 0;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) {
+	.slider-testimonial {
+		margin: 0 0 40px 0;
+
+    .splide--testimonial {
+      margin: 0px 10%;
+
+      .splide {
+
+        &__slide {
+          padding: 10px;
+          flex-direction: row;
+        
+          .image {
+            width: 25%;
+            margin-right: 5%;
+          }
+        }
+        
+        &__icon {
+          width: 50px;
+          height: 50px;
+          left: 0px;
+          
+          svg {
+            width: 25px;
+          }
+        }
+    
+        &__content {
+          margin: 20px 0 0;
+          width: 70%;
+        }
+      }
+		}
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.slider-testimonial {
+    .splide--testimonial {
+      margin: 0px 20%;
+
+      .splide {
+
+        &__slide {
+          padding: 20px;
+        }
+
+        &__arrow--next {
+          width: 100px;
+          height: 100px;
+
+          svg {
+            width: 31px;
+            height: 31px;
+          }
+        }
+
+        &__arrow--prev {
+          width: 80px;
+          height: 80px;
+
+          svg {
+            width: 21px;
+            height: 21px;
+          }
+        }
+      }
+		}
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.slider-testimonial {
+		margin: 0 0 60px 0;
+
+    .splide--testimonial {
+      .splide {
+			
+        &__slide {
+          padding: 20px;
+        }
+
+        &__icon {
+          width: 70px;
+          height: 70px;
+          
+          svg {
+            width: 30px;
+          }
+        }
+
+        &__nav-next {    
+          width: 112px;
+          height: 112px;
+
+          svg {
+            width: 34px;
+            height: 34px;
+          }
+        }
+
+        &__nav-prev {  
+          width: 88px;
+          height: 88px;
+
+          svg {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+		}
+	}
+}
+
+@media screen and (min-width: 1401px) {
+	.slider-testimonial {
+    .splide--testimonial {
+      margin: 0px 25%;
+
+      .splide {
+        
+        &__slide {
+          padding: 50px;
+        }
+      }
+		}
+	}
+}

@@ -1,0 +1,40 @@
+{
+  "name": "epea-theme",
+  "version": "0.1.0",
+  "description": "block written with ESNext standard and JSX support – build step required.",
+  "author": "The WordPress Contributors",
+  "license": "GPL-2.0-or-later",
+  "main": "dist/index.js",
+  "files": [
+    "/assets",
+    "/inc",
+    "/parts",
+    "/templates",
+    "/style.css",
+    "functions.php",
+    "index.php",
+    "screenshot.png",
+    "theme.json"
+  ],
+  "scripts": {
+    "build": "wp-scripts build --webpack-copy-php",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "packages-update": "wp-scripts packages-update",
+    "theme-zip": "wp-scripts plugin-zip",
+    "start": "wp-scripts start --webpack-copy-php",
+    "buildtheme": "npm run build && npm run theme-zip"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^25.3.0"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.0.7",
+    "@wordpress/icons": "^9.17.0",
+    "check-node-version": "^4.2.1",
+    "font-awesome": "^4.7.0",
+    "lodash": "^4.17.21",
+    "memize": "^1.1.0"
+  }
+}

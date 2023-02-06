@@ -1,0 +1,78 @@
+.section {
+	&.section--swipe {
+		&.section--swipe {
+			&-left,
+			&-right {
+				.section__background {
+					img {
+						object-fit: contain;
+					}
+				}
+			}
+			&-left {
+				.section__background {
+					left: 0;
+					right: unset;
+					img {
+						object-position: top left;
+					}
+				}
+			}
+			&-right {
+				.section__background {
+					right: 0;
+					left: unset;
+					img {
+						object-position: top right;
+					}
+				}
+			}
+		}
+		.section__background {
+			height: auto;
+			width: 90%;
+			top: 40px;
+		}
+	}
+}
+
+@media screen and (min-width: 481px) {
+	.section {
+		&.section--swipe {
+			.section__background {
+				width: 80%;
+				top: 60px;
+			}
+		}
+	}
+}
+@media screen and (min-width: 769px) {
+	.section {
+		&.section--swipe {
+			.section__background {
+				width: 60%;
+				top: 80px;
+			}
+		}
+	}
+}
+@media screen and (min-width: 1025px) {
+	.section {
+		&.section--swipe {
+			.section__background {
+				width: 50%;
+				top: 120px;
+			}
+		}
+	}
+}
+@media screen and (min-width: 1401px) {
+	.section {
+		&.section--swipe {
+			.section__background {
+				width: 40%;
+				top: 100px;
+			}
+		}
+	}
+}

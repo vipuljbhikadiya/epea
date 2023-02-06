@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/listitem",
+  "version": "0.1.5",
+  "title": "List Item",
+  "category": "block-category-basic",
+  "keywords": ["list", "item"],
+  "description": "",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false
+  },
+  "attributes": {
+    "values": {
+      "type": "string",
+      "source": "html",
+      "selector": "li",
+      "default": ""
+    }
+  },
+  "textdomain": "epea-theme",
+  "parent": ["epea-theme/list"],
+  "editorScript": "file:./index.js"
+}

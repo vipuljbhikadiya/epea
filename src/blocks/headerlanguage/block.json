@@ -1,0 +1,18 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "epea-theme/headerlanguage",
+	"version": "0.1.0",
+	"title": "Language Dropdown",
+	"category": "block-category-not-use",
+	"keywords": ["Language", "Dropdown", "gbblocks"],
+	"description": "",
+	"supports": {
+		"html": false,
+		"anchor": false,
+		"customClassName": false
+	},
+	"textdomain": "epea-theme",
+	"parent": ["epea-theme/header"],
+	"editorScript": "file:./index.js"
+}

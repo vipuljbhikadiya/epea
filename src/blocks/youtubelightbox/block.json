@@ -1,0 +1,18 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "epea-theme/youtubelightbox",
+	"version": "0.1.0",
+	"title": "YouTube Lightbox",
+	"category": "block-category-not-use",
+	"keywords": ["youtube", "lightbox", "epea-theme"],
+	"description": "",
+	"supports": {
+		"html": false,
+		"anchor": false,
+		"customClassName": false
+	},
+	"textdomain": "epea-theme",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css"
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/timelineslideritem",
+  "version": "0.1.5",
+	"title": "Item",
+  "category": "theme",
+  "description": "",
+  "supports": {
+    "multiple": true,
+    "reusable": false,
+    "html": false,
+    "customClassName": false
+  },
+  "attributes": {
+		"year": {
+			"type": "string",
+			"default": ""
+		}
+  },
+  "textdomain": "epea-theme",
+  "parent": ["epea-theme/timelineslider"],
+  "editorScript": "file:./index.js"
+}

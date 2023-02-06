@@ -1,0 +1,62 @@
+[data-type="epea-theme/blogslider"] {
+.slider-blog {
+	.splide--blog {
+		visibility: visible;
+
+		.splide {
+			&__slide {
+				width: calc(100% - 10px);
+				margin-right: 20px;
+			}
+
+			&__track {
+				padding-right: 8.33333%;
+			}
+		}
+	}
+}
+}
+
+@media screen and (min-width: 701px) {
+	[data-type="epea-theme/blogslider"] {
+		.slider-blog {
+			.splide--blog {		
+				.splide {
+					&__slide {
+						width: calc(50% - 10px);
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+  
+@media screen and (min-width: 769px) {
+	[data-type="epea-theme/blogslider"] {
+		.slider-blog {
+			.splide--blog {		
+				.splide {
+					&__slide {
+						width: calc(50% - 20px);
+						margin-right: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+  
+@media screen and (min-width: 1401px) {
+	[data-type="epea-theme/blogslider"] {
+		.slider-blog {
+			.splide--blog {		
+				.splide {
+					&__slide {
+						width: calc(33.33333% - 20px);
+					}
+				}
+			}
+		}
+	}
+}

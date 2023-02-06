@@ -1,0 +1,34 @@
+.visual-circle__content.block-editor-block-list__layout {
+  position: initial;
+}
+
+.block-editor-block-list__block .visual-circle__content .block-list-appender{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.wp-block-epea-theme-visualcircle {
+  flex-basis: calc(100% - var(--gap));
+  max-width: calc(100% - var(--gap));
+  margin: 0 0 var(--gap) var(--gap);
+  .col {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin: 0px;
+    background-color: transparent;
+    border-color: #52715d;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .wp-block-epea-theme-visualcircle {
+    flex-basis: calc(50% - var(--gap));
+    max-width: calc(50% - var(--gap));
+    margin: 0 0 var(--gap) var(--gap);
+  }
+}

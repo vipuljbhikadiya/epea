@@ -1,0 +1,63 @@
+.quote {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 25px;
+
+    &.quote {
+        @each $color in $color-set {
+            $color-name: nth($color, 1);
+            $color-value: nth($color, 2);
+
+            &--color-#{$color-name} {
+                color: $color-value;
+                path {
+                    fill: $color-value;
+                }
+            }
+        }
+    }
+    .quote {
+        &__visual {
+            max-width: 40px;
+            height: 40px;
+            width: 100%;
+        }
+	    &__text {
+		    font-family: $font-body;
+		    font-style: italic;
+		    font-size: 18px;
+		    line-height: 26px;
+		    margin: 0px 0px 0px 10px;
+	    }
+    }
+}
+
+@media screen and (min-width: 481px) {
+	.quote {
+		.quote {
+            &__text {
+			    font-size: 20px;
+			    line-height: 27px;
+			    margin: 10px 0px 0px 24px;
+            }
+        }
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.quote {
+		margin-bottom: 30px;
+
+        .quote {
+		    &__visual {
+			    max-width: 60px;
+			    height: 58px;
+		    }
+		    &__text {
+			    font-size: 22px;
+	    		line-height: 30px;
+		    	margin: 16px 0px 0px 24px;
+		    }
+	    }
+    }
+}

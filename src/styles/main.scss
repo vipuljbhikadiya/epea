@@ -1,0 +1,62 @@
+/*---Variables--*/
+@import "./_variable.scss";
+@import "./_global.scss";
+@import "./_typografie.scss";
+@import "./_icons.scss";
+
+
+/*---thirdparty--*/
+@import "@splidejs/splide/css/core";
+
+
+/*---Blocks--*/
+@import "../blocks/postcontent/styles/style.scss";
+@import "../blocks/header/styles/style.scss";
+@import "../blocks/headerlanguage/styles/style.scss";
+@import "../blocks/footer/styles/style.scss";
+
+@import "../blocks/section/styles/style.scss";
+@import "../blocks/sectionswipe/styles/style.scss";
+@import "../blocks/sectionhero/styles/style.scss";
+@import "../blocks/sectionherosub/styles/style.scss";
+@import "../blocks/row/styles/style.scss";
+@import "../blocks/column/styles/style.scss";
+
+@import "../blocks/headline/styles/style.scss";
+@import "../blocks/paragraph/styles/style.scss";
+@import "../blocks/button/styles/style.scss";
+@import "../blocks/list/styles/style.scss";
+@import "../blocks/listlink/styles/style.scss";
+@import "../blocks/image/styles/style.scss";
+@import "../blocks/imagebutton/styles/style.scss";
+@import "../blocks/icon/styles/style.scss";
+
+@import "../blocks/quote/styles/style.scss";
+@import "../blocks/quoteimage/styles/style.scss";
+@import "../blocks/icontext/styles/style.scss";
+@import "../blocks/divider/styles/style.scss";
+@import "../blocks/form/styles/style.scss";
+@import "../blocks/newsletter/styles/style.scss";
+
+@import "../blocks/tabsslider/styles/style.scss";
+@import "../blocks/accordion/styles/style.scss";
+@import "../blocks/youtube/styles/style.scss";
+@import "../blocks/youtubelightbox/styles/style.scss";
+
+@import "../blocks/testimonialslider/styles/style.scss";
+@import "../blocks/circleslider/styles/style.scss";
+@import "../blocks/timelineslider/styles/style.scss";
+
+@import "../blocks/mapslider/styles/style.scss";
+@import "../blocks/blogslider/styles/style.scss";
+@import "../blocks/customerpreview/styles/style.scss";
+@import "../blocks/bloglisting/styles/style.scss";
+@import "../blocks/customerlisting/styles/style.scss";
+@import "../blocks/joblisting/styles/style.scss";
+@import "../blocks/downloadlisting/styles/style.scss";
+@import "../blocks/overlaylisting/styles/style.scss";
+@import "../blocks/cardlisting/styles/style.scss";
+
+@import "../blocks/visualimage/styles/style.scss";
+@import "../blocks/visualheadline/styles/style.scss";
+@import "../blocks/visualcircle/styles/style.scss";

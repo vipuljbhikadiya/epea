@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/testimonialslider",
+  "version": "0.1.5",
+  "title": "Testimonial Slider",
+	"category": "block-category-slider",
+  "description": "",
+  "supports": {
+    "multiple": true,
+    "reusable": false,
+    "html": false,
+    "customClassName": false
+  },
+  "attributes": {
+    "anchor": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "epea-theme",
+  "parent": ["epea-theme/section", "epea-theme/sectionhero", "epea-theme/sectionherosub", "epea-theme/sectionswipe", "epea-theme/tabsslideritem"],
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

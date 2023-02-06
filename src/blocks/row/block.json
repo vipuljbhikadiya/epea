@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/row",
+  "version": "0.1.5",
+  "title": "Row",
+  "category": "block-category-grid",
+  "description": "",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false
+  },
+  "attributes": {
+    "xlAlignH": {
+      "type": "string",
+      "default": ""
+    },
+    "lgAlignH": {
+      "type": "string",
+      "default": ""
+    },
+    "mdAlignH": {
+      "type": "string",
+      "default": ""
+    },
+    "smAlignH": {
+      "type": "string",
+      "default": ""
+    },
+    "xsAlignH": {
+      "type": "string",
+      "default": ""
+    },
+    "xlAlignV": {
+      "type": "string",
+      "default": ""
+    },
+    "lgAlignV": {
+      "type": "string",
+      "default": ""
+    },
+    "mdAlignV": {
+      "type": "string",
+      "default": ""
+    },
+    "smAlignV": {
+      "type": "string",
+      "default": ""
+    },
+    "xsAlignV": {
+      "type": "string",
+      "default": ""
+    },
+    "xlReverseCol": {
+      "type": "boolean",
+      "default": false
+    },
+    "lgReverseCol": {
+      "type": "boolean",
+      "default": false
+    },
+    "mdReverseCol": {
+      "type": "boolean",
+      "default": false
+    },
+    "smReverseCol": {
+      "type": "boolean",
+      "default": false
+    },
+    "xsReverseCol": {
+      "type": "boolean",
+      "default": false
+    },
+    "colheight": {
+      "type": "boolean",
+      "default": false
+    },
+    "contentwidth": {
+      "type": "boolean",
+      "default": false
+    },
+    "colgap": {
+      "type": "number",
+      "default": 1
+    },
+    "anchor": {
+      "type": "string",
+      "default": ""
+    },
+    "extraclass": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "keywords": ["row"],
+  "parent": ["epea-theme/section", "epea-theme/sectionhero", "epea-theme/sectionherosub", "epea-theme/sectionswipe", "epea-theme/tabsslideritem"],
+  "textdomain": "epea-theme",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/visualcircleitem",
+  "version": "0.1.0",
+  "title": "Item",
+  "category": "theme",
+	"keywords": ["visual", "circle item"],
+  "description": "",
+  "supports": {
+    "html": true,
+    "anchor": false,
+    "customClassName": false
+  },
+  "attributes": {
+		"circleHeadline": {
+      "type": "string",
+      "source": "html",
+      "selector": ".visual-circle__title",
+      "default": ""
+		},
+		"circleText": {
+      "type": "string",
+      "source": "html",
+      "selector": ".visual-circle__text",
+      "default": ""
+		}
+  },
+  "textdomain": "epea-theme",
+  "parent": ["epea-theme/visualcircle"],
+  "editorScript": "file:./index.js"
+}

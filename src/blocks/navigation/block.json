@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/navigation",
+  "version": "0.1.5",
+  "title": "Navigation",
+	"category": "block-category-not-use",
+  "description": "",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false
+  },
+  "attributes": {
+    "anchor": {
+      "type": "string"
+    },
+    "menu": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "textdomain": "epea-theme",
+  "parent": ["epea-theme/header", "epea-theme/footer"],
+  "editorScript": "file:./index.js",
+  "render": "file:./register.php"
+}

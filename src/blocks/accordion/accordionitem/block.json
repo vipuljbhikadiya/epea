@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/accordionitem",
+  "version": "0.1.5",
+  "title": "Item",
+  "category": "theme",
+  "keywords": ["accordion"],
+  "description": "",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false
+  },
+  "attributes": {
+    "itemId": {
+      "type": "number",
+      "default": 1
+    },
+    "iconClass": {
+      "type": "string",
+      "default": "icon-01-visual"
+    },
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": "span"
+    }
+  },
+  "parent": [" epea-theme/accordion "],
+  "textdomain": "epea-theme",
+  "editorScript": "file:./index.js"
+}

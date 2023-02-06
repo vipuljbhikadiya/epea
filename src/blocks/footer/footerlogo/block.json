@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/footerlogo",
+  "version": "0.1.5",
+	"title": "Logo",
+	"category": "block-category-not-use",
+	"keywords": ["footer", "logo"],
+  "description": "",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false
+  },
+  "textdomain": "epea-theme",
+  "parent": ["epea-theme/footercolumn"],
+  "editorScript": "file:./index.js"
+}

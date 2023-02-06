@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/footer",
+  "version": "0.1.5",
+  "title": "Footer",
+	"category": "block-category-not-use",
+  "description": "",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false
+  },
+  "keywords": ["Footer"],
+  "textdomain": "epea-theme",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

@@ -1,0 +1,178 @@
+// color setting
+.components-panel__body.block-color-setting {
+  border: 0px;
+  margin-top: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
+  &.block-color-top-0 {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .components-panel__body-title {
+    padding-top: 0px;
+    &:hover {
+      background: transparent;
+    }
+  }
+  .components-panel__body-toggle {
+    pointer-events: none;
+    span:first-child {
+      display: none;
+    }
+  }
+}
+
+//  row block
+.block--row__settings {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+  position: relative;
+  button.components-range-control__reset:not(.align--reset) {
+    position: relative;
+    top: unset;
+    right: unset;
+  }
+  > .components-base-control {
+    width: 100%;
+    margin: 0px;
+    .components-base-control__field {
+      margin: 0px;
+    }
+  }
+  &.block--row__col {
+    flex-direction: column;
+    > button {
+      margin: 10px auto 0px;
+      width: 100%;
+      justify-content: center;
+      position: relative;
+      top: unset;
+      right: unset;
+    }
+  }
+  .align--reset {
+    top: -5px;
+  }
+}
+.col-control {
+  .col-control-wrap {
+    button.components-range-control__reset:not(.align--reset) {
+      margin-left: 10px;
+      position: relative;
+      top: unset;
+      right: unset;
+    }
+  }
+}
+
+// toggle option
+.block-toggle {
+  div:nth-child(3) {
+    flex: 0.5 0.5 0%;
+  }
+  div:nth-child(4) {
+    flex: 1.3 1.3 0%;
+  }
+  div:last-child {
+    flex: 1.2 1.2 0%;
+  }
+}
+// image replace and remove button
+.block-section-background-image-replace {
+  margin: 15px 0px 10px;
+  display: block;
+}
+.components-button.block-section-background-image-remove {
+  margin-bottom: 0px;
+  text-decoration: none;
+  &:hover:not(:disabled) {
+    box-shadow: unset;
+  }
+  &:focus {
+    outline: unset;
+  }
+}
+.editor-post-featured-image__preview {
+  img {
+    width: auto;
+  }
+}
+// show toggle in full width
+.block-toggle-full {
+  width: 100%;
+}
+// add border between option
+.block-seprator {
+  border-top: 1px solid #e0e0e0;
+  display: block;
+  margin: 0px 0px 25px;
+}
+// reset button
+.components-button.block--reset-btn {
+  height: 30px;
+}
+// add top margin on option
+.block-mt {
+  margin-top: 24px;
+}
+
+// reset
+.block--component-align {
+  position: relative;
+  .block--label-as-component-button {
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+}
+.components-range-control__reset {
+  position: absolute;
+  top: 32px;
+  right: 0px;
+}
+// alignment option
+.block-togglegroup {
+  > div:not(:first-child) {
+    button {
+      width: 100%;
+    }
+  }
+  > div[data-active="true"] {
+    button {
+      color: #fff;
+    }
+  }
+}
+
+// placeholder image
+.placeholder__img {
+  img {
+    width: 100%;
+  }
+}
+
+// section block appender
+.block-editor-block-list__block.wp-block-epea-theme-section {
+  &.is-selected {
+    .section__content
+      > .block-editor-inner-blocks
+      > .block-editor-block-list__layout
+      > .block-list-appender {
+      display: block;
+    }
+  }
+  .section__content
+    > .block-editor-inner-blocks
+    > .block-editor-block-list__layout
+    > .block-list-appender {
+    position: relative;
+    display: none;
+  }
+}
+
+// reset
+.resetAlign {
+  position: absolute;
+  right: 16px;
+}

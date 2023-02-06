@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/testimonialslide",
+  "version": "0.1.5",
+  "title": "Item",
+  "category": "theme",
+  "description": "",
+  "supports": {
+    "multiple": true,
+    "reusable": false,
+    "html": false,
+    "customClassName": false
+  },
+  "attributes": {
+    "xsimageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "webpxsImageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "imageId": {
+      "type": "number",
+      "default": ""
+    },
+    "imageAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "imageDefaultAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "slideName": {
+      "type": "string",
+      "source": "html",
+      "selector": ".splide__name",
+      "default": ""
+    },
+    "slidePosition": {
+      "type": "string",
+      "source": "html",
+      "selector": ".splide__position",
+      "default": ""
+    },
+    "slideDescription": {
+      "type": "string",
+      "source": "html",
+      "selector": ".splide__description",
+      "default": ""
+    }
+  },
+  "textdomain": "epea-theme",
+  "parent": ["epea-theme/testimonialslider"],
+  "editorScript": "file:./index.js"
+}

@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/button",
+  "version": "0.1.0",
+  "title": "Button",
+	"category": "block-category-basic",
+  "keywords": ["button", "link"],
+  "description": "",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false
+  },
+  "attributes": {
+    "style": {
+      "type": "string",
+      "default": "one"
+    },
+    "bgcolorClass": {
+      "type": "string",
+      "default": "six"
+    },
+    "bgcolor": {
+      "type": "string",
+      "default": "#8ABD7D"
+    },
+    "width": {
+      "type": "string",
+      "default": "inline"
+    },
+    "linkTarget": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "a",
+      "attribute": "target"
+    },
+    "downloadable": {
+      "type": "boolean",
+      "default": false
+    },
+    "text": {
+      "type": "string",
+      "source": "html",
+      "selector": "a"
+    },
+    "url": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "a",
+      "attribute": "href"
+    },
+		"buttonicon": {
+			"type": "boolean",
+			"default": false
+		},
+    "responsiveMode": {
+      "type": "string",
+      "default": "xs"
+    },
+    "AlignXs": {
+      "type": "string",
+      "default": "left"
+    },
+    "AlignSm": {
+      "type": "string",
+      "default": ""
+    },
+    "AlignMd": {
+      "type": "string",
+      "default": ""
+    },
+    "AlignLg": {
+      "type": "string",
+      "default": ""
+    },
+    "AlignXl": {
+      "type": "string",
+      "default": ""
+    },
+    "anchor": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "epea-theme",
+  "parent": ["epea-theme/column", "epea-theme/visualimage", "epea-theme/accordionitem"],
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

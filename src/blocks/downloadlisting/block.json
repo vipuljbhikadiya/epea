@@ -1,0 +1,32 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "epea-theme/downloadlisting",
+	"version": "0.1.5",
+	"title": "Download Listing",
+	"category": "block-category-listing",
+	"keywords": ["download", "list", "taxonomy"],
+	"description": "",
+	"supports": {
+		"html": false,
+		"anchor": false,
+		"customClassName": false
+	},
+	"attributes": {
+		"taxonomy": {
+			"type": "array"
+		},
+		"download": {
+			"type": "boolean",
+			"default": false
+		},
+		"anchor": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"parent": ["epea-theme/section", "epea-theme/sectionhero", "epea-theme/sectionherosub", "epea-theme/sectionswipe", "epea-theme/tabsslideritem"],
+	"textdomain": "epea-theme",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css"
+}

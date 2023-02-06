@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/section",
+  "version": "0.1.5",
+  "title": "General",
+  "category": "block-category-sections",
+  "description": "",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false
+  },
+  "attributes": {
+    "topPadding": {
+      "type": "number",
+      "default": "1"
+    },
+    "bottomPadding": {
+      "type": "number",
+      "default": "1"
+    },
+    "backgroundAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundDefaultAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "xlbackgroundImageId": {
+      "type": "number"
+    },
+    "xlbackgroundImagesrc": {
+      "type": "string"
+    },
+    "webpImageUrl": {
+      "type": "string"
+    },
+    "mdbackgroundImageId": {
+      "type": "number"
+    },
+    "mdbackgroundImagesrc": {
+      "type": "string"
+    },
+    "webpmdImageUrl": {
+      "type": "string"
+    },
+    "xsbackgroundImageId": {
+      "type": "number"
+    },
+    "xsbackgroundImagesrc": {
+      "type": "string"
+    },
+    "webpxsImageUrl": {
+      "type": "string"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#fff"
+    },
+    "backgroundColorClass": {
+      "type": "string",
+      "default": "two"
+    },
+    "anchor": {
+      "type": "string",
+      "default": ""
+    },
+    "hideLG": {
+      "type": "boolean",
+      "default": false
+    },
+    "hideMD": {
+      "type": "boolean",
+      "default": false
+    },
+    "hideXS": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "keywords": ["section", "block"],
+  "textdomain": "epea-theme",
+  "editorScript": "file:./index.js"
+}

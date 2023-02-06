@@ -1,0 +1,18 @@
+.block-editor-inserter__preview-container {
+  display: none;
+}
+
+.epea-theme_text_area {
+  width: 100%;
+  textarea {
+    resize: none;
+  }
+}
+
+.epea-theme_hide_panel_icon {
+  .components-panel__body-toggle {
+    .components-panel__icon {
+      display: none;
+    }
+  }
+}

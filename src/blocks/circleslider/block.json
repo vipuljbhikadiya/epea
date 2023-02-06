@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/circleslider",
+  "version": "0.1.5",
+  "title": "Circle Slider",
+	"category": "block-category-slider",
+  "description": "",
+  "supports": {
+    "multiple": true,
+    "reusable": false,
+    "html": false,
+    "customClassName": false
+  },
+  "attributes": {
+    "anchor": {
+      "type": "string",
+      "default": ""
+    },
+    "innerItem": {
+			"type": "array",
+			"default": []
+		},
+		"style": {
+			"type": "string",
+			"default": "big"
+		}
+  },
+	"parent": ["epea-theme/section", "epea-theme/sectionhero", "epea-theme/sectionherosub", "epea-theme/sectionswipe", "epea-theme/tabsslideritem"],
+  "textdomain": "epea-theme",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

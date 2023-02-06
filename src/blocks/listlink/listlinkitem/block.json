@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/listlinkitem",
+  "version": "0.1.5",
+  "title": "Item",
+  "category": "theme",
+  "description": "",
+  "supports": {
+    "html": true,
+    "anchor": false,
+    "customClassName": false
+  },
+	"attributes": {
+    "itemLink": {
+      "type": "object"
+    }
+	},
+  "parent": ["epea-theme/listlink"],
+  "keywords": ["Footer"],
+  "textdomain": "epea-theme",
+  "editorScript": "file:./index.js"
+}

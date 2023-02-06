@@ -1,0 +1,32 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "epea-theme/blogslider",
+	"version": "0.1.5",
+	"title": "Blog Slider",
+	"category": "block-category-slider",
+	"keywords": ["Blogs", "taxonomy"],
+	"description": "A gutenberg block to use for Blogs slider.",
+	"supports": {
+		"html": false,
+		"anchor": false,
+		"customClassName": false
+	},
+	"attributes": {
+		"taxonomy": {
+			"type": "array"
+		},
+		"blogsSlider": {
+			"type": "boolean",
+			"default": false
+		},
+		"anchor": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"parent": ["epea-theme/section", "epea-theme/sectionhero", "epea-theme/sectionherosub", "epea-theme/sectionswipe", "epea-theme/tabsslideritem"],
+	"textdomain": "epea-theme",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css"
+}

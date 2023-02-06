@@ -1,0 +1,160 @@
+// -----------------------------------------------------------------------------
+// CSS DEFINITION::START -------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+// CSS XS DEFINITION::ROW ------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+$name: nth($breakpoint-xs, 1);
+$content: nth($breakpoint-xs, 3);
+
+.row {
+	--gap: 0px;
+
+	width: calc(100% + var(--gap));
+	display: flex;
+	flex: 0 1 auto;
+	flex-direction: row;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	overflow: visible;
+	margin: 0 0 calc(-1 * var(--gap)) calc(-1 * var(--gap));
+	padding: 0 0 var(--gap) 0;
+}
+
+// DEFINE XS ROW WIDTH ---------------------------------------------------------
+
+.row-wrapper--ct-wd {
+	max-width: $content;
+	margin: 0 auto;
+	overflow: visible;
+}
+
+// DEFINE XS COLUMN SAME HEIGHT ------------------------------------------------
+
+.row.row--col-ht {
+	align-items: initial;
+}
+.row--col-ht > .col > .col__content {
+	height: 100%;
+}
+
+// DEFINE XS COLUMN GAPS -------------------------------------------------------
+
+@for $i from 0 through ($grid-gap-count - 2) {
+	$gap-size: $i;
+	$gap-value: nth($grid-gap-xs, ($i + 2));
+
+	.row--gap-#{$gap-size} {
+		--gap: #{$gap-value};
+	}
+}
+
+// DEFINE XS COLUMN ALIGNMENT VERTICAL -----------------------------------------
+
+.row--xs-top {
+	align-items: flex-start;
+}
+.row--xs-middle {
+	align-items: center;
+}
+.row--xs-bottom {
+	align-items: flex-end;
+}
+
+// DEFINE XS ROW ALIGNMENT HORIZONTAL ------------------------------------------
+
+.row--xs-start {
+	justify-content: flex-start;
+}
+.row--xs-center {
+	justify-content: center;
+}
+.row--xs-end {
+	justify-content: flex-end;
+}
+
+// DEFINE XS ROW REVERSE -------------------------------------------------------
+
+.row--xs-rv {
+	flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+}
+
+// -----------------------------------------------------------------------------
+// CSS DEFINITION::BREAKPOINTS -------------------------------------------------
+// -----------------------------------------------------------------------------
+
+@each $breakpoint in $breakpoint-set {
+	// CSS BREAKPOINTS DEFINITION::ROW ---------------------------------------------
+	// -----------------------------------------------------------------------------
+
+	$name: nth($breakpoint, 1);
+	$size: nth($breakpoint, 2);
+	$content: nth($breakpoint, 3);
+
+	@media only screen and (min-width: $size) {
+		// DEFINE BREAKPOINTS ROW WIDTH ------------------------------------------------
+
+		.row-wrapper--ct-wd {
+			max-width: $content;
+		}
+
+		.row {
+			flex-wrap: wrap;
+            flex-direction: row;
+		}
+
+		.row--col-ht {
+			align-items: initial;
+		}
+
+		// DEFINE BREAKPOINTS COLUMN GAPS ----------------------------------------------
+
+		@each $gap in $grid-gap-set {
+			$gap-name: nth($gap, 1);
+
+			@if ($gap-name == $name) {
+				@for $i from 0 through ($grid-gap-count - 2) {
+					$gap-size: $i;
+					$gap-value: nth($gap, ($i + 2));
+                    
+                    .row--gap-#{$gap-size} {
+					    --gap: #{$gap-value};
+                    }
+				}
+			}
+		}
+
+		// DEFINE BREAKPOINTS ROW ALIGNMENT VERTICAL -----------------------------------
+
+		.row--#{$name}-top {
+			align-items: flex-start;
+		}
+		.row--#{$name}-middle {
+			align-items: center;
+		}
+		.row--#{$name}-bottom {
+			align-items: flex-end;
+		}
+
+		// DEFINE BREAKPOINTS ROW ALIGNMENT HORIZONTAL ---------------------------------
+
+		.row--#{$name}-start {
+			justify-content: flex-start;
+		}
+		.row--#{$name}-center {
+			justify-content: center;
+		}
+		.row--#{$name}-end {
+			justify-content: flex-end;
+		}
+
+		// DEFINE BREAKPOINTS COLUMN REVERSE -------------------------------------------
+
+		.row--#{$name}-rv {
+			flex-wrap: wrap-reverse;
+            flex-direction: row-reverse;
+		}		
+	}
+}

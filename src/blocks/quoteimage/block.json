@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/quoteimage",
+  "version": "0.1.5",
+	"title": "Quote + Image",
+  "category": "block-category-advanced",
+	"keywords": ["quote", "image"],
+  "description": "",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false
+  },
+  "attributes": {
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "webpImageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "xsimageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "webpxsImageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "mdimageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "webpmdImageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "imageId": {
+      "type": "number",
+      "default": ""
+    },
+    "imageAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "imageDefaultAlt": {
+      "type": "string",
+      "default": ""
+    },
+		"showButton": {
+			"type": "boolean",
+			"default": false
+		},
+    "buttonLink": {
+      "type": "object"
+    },
+    "buttonText": {
+      "type": "string",
+      "source": "html",
+      "selector": ".button-default"
+    },
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": ".headline"
+    },
+    "anchor": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "epea-theme",
+  "parent": ["epea-theme/section", "epea-theme/sectionhero", "epea-theme/sectionherosub", "epea-theme/sectionswipe", "epea-theme/tabsslideritem"],
+  "editorScript": "file:./index.js"
+}

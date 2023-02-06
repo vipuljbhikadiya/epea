@@ -1,0 +1,34 @@
+.wp-block[data-type="epea-theme/list"] > .list {
+  
+  li {
+    > .rich-text {
+      display: inline-block;
+    }
+  }
+
+  > .block-list-appender {
+    position: relative;
+    display: none;
+    margin-right: 22px;
+
+    > button {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      padding: 12px;
+      box-shadow: inset 0 0 0 1px #007cba;
+      color: #007cba;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.wp-block[data-type="epea-theme/list"].is-selected > .list,
+.wp-block[data-type="epea-theme/list"].has-child-selected > .list  {
+  > .block-list-appender {
+    display: block;
+  }  
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/quote",
+  "version": "0.1.5",
+  "title": "Quote",
+  "category": "block-category-basic",
+  "keywords": ["Quote", "text"],
+  "description": "",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false
+  },
+  "attributes": {
+    "quoteColor": {
+      "type": "string",
+      "default": "#49725B"
+    },
+    "quoteColorClass": {
+      "type": "string",
+      "default": "five"
+    },
+    "anchor": {
+      "type": "string",
+      "default": ""
+    },
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": "p",
+      "default": ""
+    }
+  },
+  "textdomain": "epea-theme",
+  "parent": ["epea-theme/column", "epea-theme/visualimage", "epea-theme/accordionitem"],
+  "editorScript": "file:./index.js"
+}

@@ -1,0 +1,135 @@
+ul,
+li {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  font-family: $font-body;
+  list-style: none;
+  font-weight: 400;
+}
+
+ul.list {
+  li::before {
+    content: "\2022";
+    font-weight: bold;
+    display: inline-block;
+    width: 22px;
+    margin-left: -22px;
+  }
+}
+
+ol.list {
+  counter-reset: li;
+  li::before {
+    counter-increment: li;
+    content: counter(li);
+    font-weight: 400;
+    display: inline-block;
+    width: 22px;
+    margin-left: -33px;
+    margin-right: 11px;
+    text-align: right;
+    direction: rtl;
+  }
+}
+
+.list {
+  &.list {
+    @each $color in $color-set {
+      $color-name: nth($color, 1);
+      $color-value: nth($color, 2);
+
+      &--color-#{$color-name} {
+        color: $color-value;
+      }
+    }
+
+    &--style- {
+      &one {
+        margin: 0px 0px 25px;
+        li {
+          font-size: 22px;
+          line-height: 26px;
+          margin-bottom: 18px;
+        }
+      }
+      &two {
+        margin: 0px 0px 25px;
+        li {
+          font-size: 18px;
+          line-height: 28px;
+          margin-bottom: 15px;
+        }
+      }
+      &three {
+        margin: 0px 0px 25px;
+        li {
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+@each $color in $color-set {
+  $color-name: nth($color, 1);
+  $color-link: nth($color, 4);
+
+  .section--bg-#{$color-name} {
+    .list {
+      a {
+        color: $color-link;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .list {
+    &.list {  
+      &--style- {
+        &one {
+          margin: 0px 0px 35px;
+          li {
+            font-size: 27px;
+            line-height: 32px;
+          }
+        }
+        &two {
+          li {
+            line-height: 30px;
+          }
+        }
+        &three {
+          li {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .list {
+    &.list {  
+      &--style- {
+        &two {
+          margin-bottom: 30px;
+          li {
+            font-size: 20px;
+          }
+        }
+        &three {
+          li {
+            font-size: 18px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+  }
+}

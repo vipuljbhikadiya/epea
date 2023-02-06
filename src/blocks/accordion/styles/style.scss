@@ -1,0 +1,124 @@
+.accordion {
+  display: block;
+
+  .accordion-item {
+    margin-bottom: 10px;
+  
+    &__header {
+      border: 1px solid #49725B;
+      padding: 3px 15px 3px 3px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+      text-decoration: none;
+      max-width: 100%;
+      background: transparent;
+      width: 100%;
+
+      .icon {
+        flex-basis: 40px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        margin-right: 12px;
+        width: 40px;
+      }
+
+      .headline {
+        font-size: 15px;
+        line-height: 16px;
+        margin: 0px;
+        padding: 5px 0;
+      }
+
+      span {
+        margin-right: 16px;
+      }
+
+      svg {
+        height: 15px;
+        transition: transform 0.5s;
+        transform: rotate(-270deg);
+        margin-left: auto;
+
+        line {
+          stroke: #575756;
+        }
+      }
+    }
+  
+    &__content {
+      max-height: 0;
+      overflow: hidden;
+    }
+
+    &__content-helper {
+      padding: 20px;
+    }
+
+    &--active {
+      .accordion-item__header {
+        svg {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+  }
+}
+
+body.page--animation-ready {
+  .accordion {
+    .accordion-item { 
+      &__content {
+        transition: max-height 0.4s ease-out;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) {
+
+}
+
+@media screen and (min-width: 769px) {
+
+}
+
+@media screen and (min-width: 1025px) {
+  .accordion {
+    display: block;
+  
+    .accordion-item {
+      margin-bottom: 10px;
+    
+      &__header {
+        padding-right: 30px;
+  
+        .icon {
+          flex-basis: 52px;
+          margin-right: 20px;
+          width: 52px;
+        }
+
+        .headline {
+          font-size: 18px;
+          line-height: 22px;
+          padding: 8px 0;
+        }
+
+        span {
+          margin-right: 20px;
+        }
+
+        svg {
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1401px) {
+
+}

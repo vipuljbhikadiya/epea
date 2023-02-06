@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/joblistingitem",
+  "version": "0.1.0",
+  "title": "Item",
+  "category": "theme",
+  "keywords": ["jobs", "listing"],
+  "description": "",
+  "supports": {
+    "html": true,
+    "anchor": false,
+    "customClassName": false
+  },
+  "attributes": {
+    "jobTitle": {
+      "type": "string",
+      "source": "html",
+      "selector": ".listing-job__title",
+      "default": ""
+    },
+    "jobLocation": {
+      "type": "string",
+      "source": "html",
+      "selector": ".listing-job__location-value",
+      "default": ""
+    },
+    "jobLevel": {
+      "type": "string",
+      "source": "html",
+      "selector": ".listing-job__level-value",
+      "default": ""
+    },
+    "jobEmployment": {
+      "type": "string",
+      "source": "html",
+      "selector": ".listing-job__employment-value",
+      "default": ""
+    },
+    "jobSector": {
+      "type": "string",
+      "source": "html",
+      "selector": ".listing-job__sector-value",
+      "default": ""
+    },
+    "buttonText": {
+      "type": "string",
+      "source": "html",
+      "selector": ".listing-job__button-helper",
+      "default": ""
+    },
+		"buttonLink": {
+      "type": "object"
+		}
+  },
+  "textdomain": "epea-theme",
+  "parent": ["epea-theme/joblisting"],
+  "editorScript": "file:./index.js"
+}

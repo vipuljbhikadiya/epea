@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/visualcircle",
+  "version": "0.1.0",
+	"title": "Visual Circle",
+	"category": "block-category-special",
+	"keywords": ["visual", "circle"],
+  "description": "",
+  "supports": {
+    "html": true,
+    "anchor": false,
+    "customClassName": false
+  },
+  "attributes": {
+    "anchor": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "epea-theme",
+  "parent": ["epea-theme/row"],
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

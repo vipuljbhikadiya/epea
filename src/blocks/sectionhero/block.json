@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/sectionhero",
+  "version": "0.1.5",
+  "title": "Hero Main",
+	"category": "block-category-sections",
+  "description": "",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false
+  },
+	"attributes": {
+    "mainHeadline": {
+      "type": "string",
+      "source": "html",
+      "selector": ".headline--style-one",
+      "default": ""
+    },
+    "mainLevel": {
+      "type": "string",
+      "default": "1"
+    },
+    "paragraph": {
+      "type": "string",
+      "source": "html",
+      "selector": ".text--style-one",
+      "default": ""
+    },
+    "buttonLink": {
+      "type": "object"
+    },
+    "buttonText": {
+      "type": "string",
+      "source": "html",
+      "selector": ".button__helper"
+    },
+		"hideDescription": {
+			"type": "boolean",
+			"default": true
+		},
+		"hideButton": {
+			"type": "boolean",
+			"default": true
+		},
+		"anchor": {
+			"type": "string",
+			"default": ""
+		},
+		"bottomPadding": {
+			"type": "number",
+			"default": 1
+		},
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "webpImageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "xsimageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "webpxsImageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "mdimageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "webpmdImageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "imageId": {
+      "type": "number",
+      "default": ""
+    },
+    "imageAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "imageDefaultAlt": {
+      "type": "string",
+      "default": ""
+    }
+	},
+	"keywords": ["section", "hero", "main"],
+  "textdomain": "epea-theme",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

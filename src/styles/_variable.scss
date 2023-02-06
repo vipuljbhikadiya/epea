@@ -1,0 +1,57 @@
+// DEFINE COLOR SET ------------------------------------------------------------
+// name | background-color | text-color | link-color
+
+$color-set: one #000000 #ffffff #E61CA4, 
+			two #FFFFFF #575756 #E61CA4, 
+			three #575756 #ffffff #E61CA4, 
+			four #E3E3E3 #575756 #16BFFA, 
+			five #49725B #ffffff #E61CA4, 
+			six #8ABD7D #ffffff #16BFFA, 
+			seven #169DB8 #ffffff #E61CA4;
+
+$color-one: #000000;
+$color-two: #FFFFFF;
+$color-three: #575756;
+$color-four: #E3E3E3;
+$color-five: #49725B;
+$color-six: #8ABD7D;
+$color-seven: #169DB8;
+			
+// DEFINE BREAKPOINTS ----------------------------------------------------------
+// name | breakpoint
+
+$breakpoint-xs: xs 0 300px;
+$breakpoint-set: sm 481px 440px, md 769px 740px, lg 1025px 940px, xl 1401px 1340px;
+
+
+// DEFINE SECTION PADDINGS -----------------------------------------------------
+// breakpoint | padding 1 | padding 2...
+
+$section-padding-xs: xs 0px 60px 90px 120px 160px;
+$section-padding-set: sm 0px 60px 90px 120px 180px, md 0px 60px 90px 120px 180px,
+	lg 0px 60px 90px 120px 240px, xl 0px 60px 90px 120px 240px;
+
+$section-padding-count: length($section-padding-set);
+
+
+// SET NUMBER OF COLUMNS -------------------------------------------------------
+$grid-column-count: 12 !default;
+$grid-column-offset: ($grid-column-count - 1) !default;
+
+
+// DEFINE COLUMN GAPS ----------------------------------------------------------
+// breakpoint | gap 1 | gap 2...
+
+$grid-gap-xs: xs 0px 20px 20px 20px;
+$grid-gap-set: sm 0px 20px 20px 30px, md 0px 20px 30px 40px, lg 0px 20px 40px 60px, xl 0px 20px 40px 60px;
+$grid-gap-count: length($grid-gap-xs);
+
+
+// DEFINE COLUMN CONTENT PADDINGS ----------------------------------------------
+// breakpoint | padding 1 | padding 2...
+
+$grid-column-padding-xs: xs 0px 3px 10px 30px 40px;
+$grid-column-padding-set: sm 0px 3px 20px 40px 50px, md 0px 3px 20px 40px 50px,
+	lg 0px 3px 30px 50px 60px, xl 0px 3px 30px 50px 60px;
+
+$grid-column-padding-count: length($grid-column-padding-set);

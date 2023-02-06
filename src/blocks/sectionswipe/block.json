@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/sectionswipe",
+  "version": "0.1.5",
+  "title": "Swipe",
+	"category": "block-category-sections",
+  "description": "",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false
+  },
+	"attributes": {
+		"anchor": {
+			"type": "string",
+			"default": ""
+		},
+    "heroPosition": {
+			"type": "string",
+			"default": "right"
+		},
+		"topPadding": {
+			"type": "number",
+			"default": 1
+		},
+		"bottomPadding": {
+			"type": "number",
+			"default": 1
+		}
+	},
+	"keywords": ["section", "swipe", "main"],
+  	"textdomain": "epea-theme",
+  	"editorScript": "file:./index.js",
+  	"editorStyle": "file:./index.css"
+}

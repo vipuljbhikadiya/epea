@@ -1,0 +1,111 @@
+.lang--selected-menu {
+	position: relative;
+	.wp-block-polylang-language-switcher {
+		z-index: 200;
+		list-style: none;
+		margin: 0;
+		position: absolute;
+		right: 0;
+		top: 78px;
+		padding: 0px 8px 0px 10px;
+		backdrop-filter: blur(18px);
+		-webkit-backdrop-filter: blur(18px);
+		background-color: rgba(255, 255, 255, 0.75);
+		font-size: 17px;
+		line-height: 20px;
+		font-family: 'Barlow', Arial, sans-serif;
+		text-transform: uppercase;
+		border-radius: 10px;
+		border: 1px solid #e3e3e3;
+		width: 153px;
+		text-align: right;
+		opacity: 0;
+		&.is--active-lang {
+			opacity: 1;
+			transition: opacity 0.5s ease-in-out;
+		}
+		li {
+			padding: 8px 10px 8px 0px;
+			&:not(:first-child) {
+				border-top: 1px solid #E3E3E3;
+			}
+			&.current-lang {
+				display: none;
+			}
+			a {
+				text-decoration: none;
+				font-size: 16px;
+				line-height: 26px;
+				color: #575756;
+				text-transform: capitalize;
+				display: inline-block;
+			}
+			.country-code {
+				text-transform: uppercase;
+				font-size: 16px;
+				line-height: 16px;
+				color: #575756;
+				background-color: hsla(60deg, 1%, 34%, 0.09);
+				backdrop-filter: blur(33px);
+				display: inline-block;
+				padding: 10px 8px 8px;
+				border-radius: 10px;
+				margin-left: 16px;
+			}
+		}
+	}
+}
+
+.header--lang-nav {
+	padding: 0 10px;
+	.lang--selected-menu {
+		.lang--menu-name {
+			padding: 13px 19px 17px 9px;
+			background-color: hsl(60deg 1% 34% / 9%);
+			backdrop-filter: blur(33px);
+			font-size: 17px;
+			line-height: 20px;
+			font-family: 'Barlow', Arial, sans-serif;
+			text-transform: uppercase;
+			border-radius: 10px;
+			display: inline-block;
+			cursor: pointer;
+			&.is-open {
+				svg {
+					transform: rotate(180deg);
+				}
+			}
+			svg {
+				transition-duration: 0.5s;
+				transition-property: transform;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				right: 9px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	header {
+		.lang--selected-menu {
+			.wp-block-polylang-language-switcher {
+				top: 85px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1401px) {
+	header {
+		.header--lang-nav {
+			border-left: 1px solid #e3e3e3;
+			margin-left: 40px;
+			padding: 0 40px;height: 100%;
+			display: flex;
+			align-items: center;
+		}
+	}
+}

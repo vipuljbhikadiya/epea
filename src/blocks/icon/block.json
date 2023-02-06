@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "epea-theme/icon",
+  "version": "0.1.0",
+  "title": "Icon",
+  "category": "block-category-basic",
+  "keywords": ["icon"],
+  "description": "",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false
+  },
+  "attributes": {
+    "iconColor": {
+      "type": "string",
+      "default": "#fff"
+    },
+    "iconColorClass": {
+      "type": "string",
+      "default": "two"
+    },
+    "iconbgColor": {
+      "type": "string",
+      "default": "#49725B"
+    },
+    "iconbgColorClass": {
+      "type": "string",
+      "default": "five"
+    },
+    "iconClass": {
+      "type": "string",
+      "default": "icon-01-visual"
+    },
+    "iconLink": {
+      "type": "object"
+    },
+    "anchor": {
+      "type": "string",
+      "default": ""
+    },
+    "isbutton": {
+      "type": "string",
+      "default": false
+    }
+  },
+  "textdomain": "epea-theme",
+  "parent": ["epea-theme/column", "epea-theme/visualimage", "epea-theme/accordionitem"],
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

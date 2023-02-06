@@ -1,0 +1,19 @@
+.icon-text {
+    display:flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 10px;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .icon {
+        align-self: baseline;
+        min-width: 40px;
+    }
+    
+    .text {
+        align-self: center;
+        margin: 0 0 0 10px;
+    }
+} 

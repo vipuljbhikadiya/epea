@@ -1,0 +1,162 @@
+.text {
+    &.text {
+    
+        @each $color in $color-set {
+	        $color-name: nth($color, 1);
+	        $color-value: nth($color, 2);
+
+	        &--color-#{$color-name} {
+		        color: $color-value;
+	        }
+        }
+
+        &--align-xs {
+            &-left {
+                text-align: left;
+            }
+            &-center {
+                text-align: center;
+            }
+            &-right {
+                text-align: right;
+            }
+        }
+
+        &--style- {
+            &one {
+                display: block;
+			    font-family: $font-body;
+			    font-size: 22px;
+			    font-weight: normal;
+			    line-height: 26px;
+			    margin-bottom: 35px;
+            }
+
+            &two {
+                display: block;
+			    font-family: $font-body;
+			    font-size: 18px;
+			    font-weight: normal;
+			    line-height: 28px;
+			    margin-bottom: 25px;
+            }
+
+            &three {
+                display: block;
+			    font-family: $font-body;
+			    font-size: 16px;
+			    font-weight: normal;
+			    line-height: 24px;
+			    margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@each $color in $color-set {
+    $color-name: nth($color, 1);
+    $color-link: nth($color, 4);
+
+    .section--bg-#{$color-name} {
+        .text {
+            a {
+                color: $color-link;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .text {
+        &.text {
+            &--align-sm {
+                &-left {
+                    text-align: left;
+                }
+                &-center {
+                    text-align: center;
+                }
+                &-right {
+                    text-align: right;
+                }
+            }
+
+            &--style- {
+                &one {
+                    font-size: 27px;
+                    line-height: 32px;
+                }
+                &two {
+                    line-height: 30px;
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (min-width: 769px) {
+    .text {
+        &.text {
+            &--align-md {
+                &-left {
+                    text-align: left;
+                }
+                &-center {
+                    text-align: center;
+                }
+                &-right {
+                    text-align: right;
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (min-width: 1025px) {
+    .text {
+        &.text {
+            &--align-lg {
+                &-left {
+                    text-align: left;
+                }
+                &-center {
+                    text-align: center;
+                }
+                &-right {
+                    text-align: right;
+                }
+            }
+
+            &--style- {
+                &two {
+                    font-size: 20px;
+                    line-height: 34px;
+                    margin-bottom: 30px;
+                }
+                &three {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (min-width: 1401px) {
+    .text {
+        &.text {
+            &--align-xl {
+                &-left {
+                    text-align: left;
+                }
+                &-center {
+                    text-align: center;
+                }
+                &-right {
+                    text-align: right;
+                }
+            }
+        }
+    } 
+}

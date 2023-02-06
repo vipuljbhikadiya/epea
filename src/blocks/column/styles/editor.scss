@@ -1,0 +1,24 @@
+.wp-block[data-type="epea-theme/column"] > .col__content {
+
+    > .block-list-appender {
+        position: relative;
+        display: block;
+        width: 100%;
+        
+        > .block-editor-inserter {
+            > button {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: auto;
+                padding: 12px !important;
+                box-shadow: inset 0 0 0 1px #007cba;
+                color: #007cba;
+                margin-bottom: 0;
+				background: transparent;
+            }
+        }
+    }
+}
