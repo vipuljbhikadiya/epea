@@ -7,7 +7,7 @@
  *
  * @package WordPress
  * @subpackage epea-theme
- * @since Default Theme 1.0
+ * @since Default Theme 1.2
  */
 
 if (file_exists(get_template_directory() . '/inc/preload-handling.php')) {
